@@ -3,22 +3,22 @@
 
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<title>Spicylicious - Premium HTML template by D.Koev</title>
-	<link rel="stylesheet" href="<?php echo base_url();?>assets/stylesheet/stylesheet.css" type="text/css" media="screen" />
+	<title>Spicylicious </title>
+	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/stylesheet/stylesheet.css" type="text/css" media="screen" />
 	<link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css' />
-	<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/stylesheet/jquery-ui-1.8.9.custom.css" />
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/stylesheet/jquery-ui-1.8.9.custom.css" />
 	<!-- jQuery and Custom scripts -->
-	<script src="<?php echo base_url();?>assets/js/jquery-1.5.2.min.js" type="text/javascript"></script>
-	<script src="<?php echo base_url();?>assets/js/jquery.cycle.lite.1.0.min.js" type="text/javascript"></script>
-	<script src="<?php echo base_url();?>assets/js/custom_scripts.js" type="text/javascript"></script>
-	<script src="<?php echo base_url();?>assets/js/jquery.roundabout.min.js" type="text/javascript"></script>
-	<script type="text/javascript" src="<?php echo base_url();?>assets/js/jquery-ui-1.8.9.custom.min.js"></script>
-	<script type="text/javascript" src="<?php echo base_url();?>assets/js/tabs.js"></script>
+	<script src="<?php echo base_url(); ?>assets/js/jquery-1.5.2.min.js" type="text/javascript"></script>
+	<script src="<?php echo base_url(); ?>assets/js/jquery.cycle.lite.1.0.min.js" type="text/javascript"></script>
+	<script src="<?php echo base_url(); ?>assets/js/custom_scripts.js" type="text/javascript"></script>
+	<script src="<?php echo base_url(); ?>assets/js/jquery.roundabout.min.js" type="text/javascript"></script>
+	<script type="text/javascript" src="<?php echo base_url(); ?>assets/js/jquery-ui-1.8.9.custom.min.js"></script>
+	<script type="text/javascript" src="<?php echo base_url(); ?>assets/js/tabs.js"></script>
 	<!-- Tipsy -->
-	<script src="<?php echo base_url();?>assets/js/tipsy/jquery.tipsy.js" type="text/javascript"></script>
-	<link href="<?php echo base_url();?>assets/js/tipsy/css.tipsy.css" rel="stylesheet" type="text/css" />
-	<script src="<?php echo base_url();?>assets/js/jquery.tweet.js" type="text/javascript"></script>
-	<link href="<?php echo base_url();?>assets/js/jquery.tweet.css" rel="stylesheet" type="text/css" />
+	<script src="<?php echo base_url(); ?>assets/js/tipsy/jquery.tipsy.js" type="text/javascript"></script>
+	<link href="<?php echo base_url(); ?>assets/js/tipsy/css.tipsy.css" rel="stylesheet" type="text/css" />
+	<script src="<?php echo base_url(); ?>assets/js/jquery.tweet.js" type="text/javascript"></script>
+	<link href="<?php echo base_url(); ?>assets/js/jquery.tweet.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
@@ -38,32 +38,32 @@
 							<table class="cart">
 								<tbody>
 									<tr>
-										<td class="image"><a href="#"><img alt="Spicylicious" src="<?php echo base_url();?>assets/image/cart_pic1.jpg" /></a></td>
+										<td class="image"><a href="#"><img alt="Spicylicious" src="<?php echo base_url(); ?>assets/image/cart_pic1.jpg" /></a></td>
 										<td class="name"><a href="#">Product name 1</a>
 											<div> </div>
 										</td>
 										<td class="quantity">x&nbsp;1</td>
 										<td class="total">$117.50</td>
-										<td class="remove"><img title="Remove" alt="Remove" src="<?php echo base_url();?>assets/image/close.png" /></td>
+										<td class="remove"><img title="Remove" alt="Remove" src="<?php echo base_url(); ?>assets/image/close.png" /></td>
 									</tr>
 									<tr>
-										<td class="image"><a href="#"><img title="Palm Treo Pro" alt="Palm Treo Pro" src="<?php echo base_url();?>assets/image/cart_pic2.jpg" /></a></td>
+										<td class="image"><a href="#"><img title="Palm Treo Pro" alt="Palm Treo Pro" src="<?php echo base_url(); ?>assets/image/cart_pic2.jpg" /></a></td>
 										<td class="name"><a href="#">Product name 2</a>
 											<div> </div>
 										</td>
 										<td class="quantity">x&nbsp;1</td>
 										<td class="total">$328.99</td>
-										<td class="remove"><img title="Remove" alt="Remove" src="<?php echo base_url();?>assets/image/close.png" /></td>
+										<td class="remove"><img title="Remove" alt="Remove" src="<?php echo base_url(); ?>assets/image/close.png" /></td>
 									</tr>
 									<tr>
-										<td class="image"><a href="#"><img title="Canon EOS 5D" alt="Canon EOS 5D" src="<?php echo base_url();?>assets/image/cart_pic3.jpg" /></a></td>
+										<td class="image"><a href="#"><img title="Canon EOS 5D" alt="Canon EOS 5D" src="<?php echo base_url(); ?>assets/image/cart_pic3.jpg" /></a></td>
 										<td class="name"><a href="#">Product name 3</a>
 											<div> - <small>Extra Cheese</small><br />
 											</div>
 										</td>
 										<td class="quantity">x&nbsp;1</td>
 										<td class="total">$94.00</td>
-										<td class="remove"><img title="Remove" alt="Remove" src="<?php echo base_url();?>assets/image/close.png" /></td>
+										<td class="remove"><img title="Remove" alt="Remove" src="<?php echo base_url(); ?>assets/image/close.png" /></td>
 									</tr>
 								</tbody>
 							</table>
@@ -91,7 +91,7 @@
 					<div id="currency"> Currency <a href="#" title="Euro">€</a> <a href="#" title="Pound Sterling">£</a> <a title="US Dollar">$</a> </div>
 				</li>
 				<li class="side_lang"><span class="icon">Language</span>
-					<div id="language"> Language <a href="#" title="English"><img src="<?php echo base_url();?>assets/image/gb.png" alt="Spicylicious store" /></a> <a href="#" title="Deutsch"><img src="<?php echo base_url();?>assets/image/de.png" alt="Spicylicious store" /></a> <a title="Bylgarski"><img src="<?php echo base_url();?>assets/image/bg.png" alt="Spicylicious store" /></a> </div>
+					<div id="language"> Language <a href="#" title="English"><img src="<?php echo base_url(); ?>assets/image/gb.png" alt="Spicylicious store" /></a> <a href="#" title="Deutsch"><img src="<?php echo base_url(); ?>assets/image/de.png" alt="Spicylicious store" /></a> <a title="Bylgarski"><img src="<?php echo base_url(); ?>assets/image/bg.png" alt="Spicylicious store" /></a> </div>
 				</li>
 				<li class="side_search"><span class="icon">Search</span>
 					<div id="search">
@@ -109,10 +109,10 @@
 				<ul class="main_menu menu_left">
 					<li><a href="account.html">My Account</a></li>
 					<li><a href="wish.html">Wish List <b>(3)</b></a></li>
-					<li><a href="about.html">About Us</a></li>
-					<li><a href="<?php echo base_url(); ?>index.php/Welcome/index">Home</a></li>
+					<li><a href="<?php echo base_url(); ?>Welcome/about_us">About Us</a></li>
+					<li><a href="<?php echo base_url(); ?>Welcome/index">Home</a></li>
 				</ul>
-				<div id="logo"><a href="index.html"><img src="<?php echo base_url();?>assets/image/logo.png" width="217" height="141" alt="Spicylicious store" /></a></div>
+				<div id="logo"><a href="index.html"><img src="<?php echo base_url(); ?>assets/image/logo.png" width="217" height="141" alt="Spicylicious store" /></a></div>
 				<ul class="main_menu menu_right">
 					<li><a href="compare.html">Compare</a></li>
 					<li><a href="cart.html">Shopping Cart</a></li>
@@ -195,49 +195,49 @@
 						<div class="box-content">
 							<ul id="myRoundabout">
 								<li>
-									<div class="prod_holder"> <a href="product.html"> <img src="<?php echo base_url();?>assets/image/pizza.jpg" alt="Spicylicious store" /> </a>
+									<div class="prod_holder"> <a href="product.html"> <img src="<?php echo base_url(); ?>assets/image/pizza.jpg" alt="Spicylicious store" /> </a>
 										<h3>Pizza Peperoni</h3>
 									</div>
 									<span class="pricetag">$ 1400,99</span>
 								</li>
 								<li>
-									<div class="prod_holder"> <a href="product.html"> <img src="<?php echo base_url();?>assets/image/pizza2.jpg" alt="Spicylicious store" /> </a>
+									<div class="prod_holder"> <a href="product.html"> <img src="<?php echo base_url(); ?>assets/image/pizza2.jpg" alt="Spicylicious store" /> </a>
 										<h3>Pizza Caprichosa</h3>
 									</div>
 									<span class="pricetag">$ 99,99</span>
 								</li>
 								<li>
-									<div class="prod_holder"> <a href="product.html"> <img src="<?php echo base_url();?>assets/image/pizza3.jpg" alt="Spicylicious store" /> </a>
+									<div class="prod_holder"> <a href="product.html"> <img src="<?php echo base_url(); ?>assets/image/pizza3.jpg" alt="Spicylicious store" /> </a>
 										<h3>Something delicious</h3>
 									</div>
 									<span class="pricetag">$ 140,99</span>
 								</li>
 								<li>
-									<div class="prod_holder"> <a href="product.html"> <img src="<?php echo base_url();?>assets/image/pizza4.jpg" alt="Spicylicious store" /> </a>
+									<div class="prod_holder"> <a href="product.html"> <img src="<?php echo base_url(); ?>assets/image/pizza4.jpg" alt="Spicylicious store" /> </a>
 										<h3>Potato Noisettes</h3>
 									</div>
 									<span class="pricetag">$ 27,99</span>
 								</li>
 								<li>
-									<div class="prod_holder"> <a href="product.html"> <img src="<?php echo base_url();?>assets/image/pizza5.jpg" alt="Spicylicious store" /> </a>
+									<div class="prod_holder"> <a href="product.html"> <img src="<?php echo base_url(); ?>assets/image/pizza5.jpg" alt="Spicylicious store" /> </a>
 										<h3>Veal steak (medium rare)</h3>
 									</div>
 									<span class="pricetag">$ 14000,99</span>
 								</li>
 								<li>
-									<div class="prod_holder"> <a href="product.html"> <img src="<?php echo base_url();?>assets/image/pizza.jpg" alt="Spicylicious store" /> </a>
+									<div class="prod_holder"> <a href="product.html"> <img src="<?php echo base_url(); ?>assets/image/pizza.jpg" alt="Spicylicious store" /> </a>
 										<h3>Peperoni pizza</h3>
 									</div>
 									<span class="pricetag">$ 73,99</span>
 								</li>
 								<li>
-									<div class="prod_holder"> <a href="product.html"> <img src="<?php echo base_url();?>assets/image/pizza2.jpg" alt="Spicylicious store" /> </a>
+									<div class="prod_holder"> <a href="product.html"> <img src="<?php echo base_url(); ?>assets/image/pizza2.jpg" alt="Spicylicious store" /> </a>
 										<h3>Peperoni pizza</h3>
 									</div>
 									<span class="pricetag">$ 1999,99</span>
 								</li>
 								<li>
-									<div class="prod_holder"> <a href="product.html"> <img src="<?php echo base_url();?>assets/image/pizza3.jpg" alt="Spicylicious store" /> </a>
+									<div class="prod_holder"> <a href="product.html"> <img src="<?php echo base_url(); ?>assets/image/pizza3.jpg" alt="Spicylicious store" /> </a>
 										<h3>Peperoni pizza</h3>
 									</div>
 									<span class="pricetag">$ 14,99</span>
@@ -246,8 +246,8 @@
 							<a href="#" class="previous_round">Previous</a> <a href="#" class="next_round">Next</a>
 						</div>
 					</div>
-				<?php echo $maincontent; ?>
-					
+					<?php echo $maincontent; ?>
+
 				</div>
 			</div>
 		</div>
