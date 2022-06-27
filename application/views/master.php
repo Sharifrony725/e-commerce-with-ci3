@@ -327,16 +327,15 @@
 	<script type="text/javascript" src="http://twitter.com/javascripts/blogger.js"></script>
 	<script type="text/javascript" src="http://twitter.com/statuses/user_timeline/d_koev.json?callback=twitterCallback2&amp;count=3"></script>
 	<script type="text/javascript">
-		<!--
-		$(document).ready(function() {
-			$('#twitter_update_list').cycle({
-				fx: 'fade', // choose your transition type, ex: fade, scrollUp, shuffle, etc...
-				next: '#tweet_next',
-				prev: '#tweet_prev'
-			});
-		});
-		//
-		-->
+	
+		// $(document).ready(function() {
+		// 	$('#twitter_update_list').cycle({
+		// 		fx: 'fade', // choose your transition type, ex: fade, scrollUp, shuffle, etc...
+		// 		next: '#tweet_next',
+		// 		prev: '#tweet_prev'
+		// 	});
+		// });
+		
 	</script>
 	<script type="text/javascript">
 		$(document).ready(function() {
