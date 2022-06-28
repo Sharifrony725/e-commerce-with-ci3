@@ -246,6 +246,7 @@
 							<a href="#" class="previous_round">Previous</a> <a href="#" class="next_round">Next</a>
 						</div>
 					</div>
+					
 					<?php echo $maincontent; ?>
 
 				</div>

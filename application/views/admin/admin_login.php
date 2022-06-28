@@ -31,6 +31,7 @@
 		}
 	</style>
 </head>
+
 <body>
 	<div class="container-fluid-full">
 		<div class="row-fluid">
@@ -42,12 +43,11 @@
 						<a href="#"><i class="halflings-icon cog"></i></a>
 					</div>
 					<h2>Login to your account</h2>
-					<form class="form-horizontal" action="index.html" method="post">
+					<form class="form-horizontal" action="<?php echo base_url() ?>AuthController/admin_login_check" method="post">
 						<fieldset>
-
-							<div class="input-prepend" title="Username">
+							<div class="input-prepend" title="Email">
 								<span class="add-on"><i class="halflings-icon user"></i></span>
-								<input class="input-large span10" name="username" id="username" type="text" placeholder="type username" />
+								<input class="input-large span10" name="email" id="email" type="email" placeholder="type email" />
 							</div>
 							<div class="clearfix"></div>
 
@@ -60,7 +60,7 @@
 							<label class="remember" for="remember"><input type="checkbox" id="remember" />Remember me</label>
 
 							<div class="button-login">
-								<button type="submit" class="btn btn-primary">Login</button>
+								<button type="submit" class="btn btn-primary" name="btn">Login</button>
 							</div>
 							<div class="clearfix"></div>
 					</form>
@@ -110,4 +110,5 @@
 	<script src="<?php echo base_url(); ?>/assets/admin/js/custom.js"></script>
 	<!-- end: JavaScript-->
 </body>
+
 </html>
