@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	
+
 	<!-- start: Meta -->
 	<meta charset="utf-8">
 	<title>Bootstrap Metro Dashboard by Dennis Ji for ARM demo</title>
@@ -9,11 +10,11 @@
 	<meta name="author" content="Dennis Ji">
 	<meta name="keyword" content="Metro, Metro UI, Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
 	<!-- end: Meta -->
-	
+
 	<!-- start: Mobile Specific -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- end: Mobile Specific -->
-	
+
 	<!-- start: CSS -->
 	<link id="bootstrap-style" href="<?php echo base_url(); ?>/assets/admin/css/bootstrap.min.css" rel="stylesheet">
 	<link href="<?php echo base_url(); ?>/assets/admin/css/bootstrap-responsive.min.css" rel="stylesheet">
@@ -23,10 +24,11 @@
 	<!-- end: CSS -->
 	<!-- start: Favicon -->
 	<link rel="shortcut icon" href="<?php echo base_url(); ?>/assets/admin/img/favicon.ico">
-	<!-- end: Favicon -->	
+	<!-- end: Favicon -->
 </head>
+
 <body>
-		<!-- start: Header -->
+	<!-- start: Header -->
 	<div class="navbar">
 		<div class="navbar-inner">
 			<div class="container-fluid">
@@ -36,7 +38,7 @@
 					<span class="icon-bar"></span>
 				</a>
 				<a class="brand" href="index.html"><span>Metro</span></a>
-								
+
 				<!-- start: Header Menu -->
 				<div class="nav-no-collapse header-nav">
 					<ul class="nav pull-right">
@@ -46,82 +48,82 @@
 							</a>
 							<ul class="dropdown-menu notifications">
 								<li class="dropdown-menu-title">
- 									<span>You have 11 notifications</span>
+									<span>You have 11 notifications</span>
 									<a href="#refresh"><i class="icon-repeat"></i></a>
-								</li>	
-                            	<li>
-                                    <a href="#">
+								</li>
+								<li>
+									<a href="#">
 										<span class="icon blue"><i class="icon-user"></i></span>
 										<span class="message">New user registration</span>
-										<span class="time">1 min</span> 
-                                    </a>
-                                </li>
+										<span class="time">1 min</span>
+									</a>
+								</li>
 								<li>
-                                    <a href="#">
+									<a href="#">
 										<span class="icon green"><i class="icon-comment-alt"></i></span>
 										<span class="message">New comment</span>
-										<span class="time">7 min</span> 
-                                    </a>
-                                </li>
+										<span class="time">7 min</span>
+									</a>
+								</li>
 								<li>
-                                    <a href="#">
+									<a href="#">
 										<span class="icon green"><i class="icon-comment-alt"></i></span>
 										<span class="message">New comment</span>
-										<span class="time">8 min</span> 
-                                    </a>
-                                </li>
+										<span class="time">8 min</span>
+									</a>
+								</li>
 								<li>
-                                    <a href="#">
+									<a href="#">
 										<span class="icon green"><i class="icon-comment-alt"></i></span>
 										<span class="message">New comment</span>
-										<span class="time">16 min</span> 
-                                    </a>
-                                </li>
+										<span class="time">16 min</span>
+									</a>
+								</li>
 								<li>
-                                    <a href="#">
+									<a href="#">
 										<span class="icon blue"><i class="icon-user"></i></span>
 										<span class="message">New user registration</span>
-										<span class="time">36 min</span> 
-                                    </a>
-                                </li>
+										<span class="time">36 min</span>
+									</a>
+								</li>
 								<li>
-                                    <a href="#">
+									<a href="#">
 										<span class="icon yellow"><i class="icon-shopping-cart"></i></span>
 										<span class="message">2 items sold</span>
-										<span class="time">1 hour</span> 
-                                    </a>
-                                </li>
+										<span class="time">1 hour</span>
+									</a>
+								</li>
 								<li class="warning">
-                                    <a href="#">
+									<a href="#">
 										<span class="icon red"><i class="icon-user"></i></span>
 										<span class="message">User deleted account</span>
-										<span class="time">2 hour</span> 
-                                    </a>
-                                </li>
+										<span class="time">2 hour</span>
+									</a>
+								</li>
 								<li class="warning">
-                                    <a href="#">
+									<a href="#">
 										<span class="icon red"><i class="icon-shopping-cart"></i></span>
 										<span class="message">New comment</span>
-										<span class="time">6 hour</span> 
-                                    </a>
-                                </li>
+										<span class="time">6 hour</span>
+									</a>
+								</li>
 								<li>
-                                    <a href="#">
+									<a href="#">
 										<span class="icon green"><i class="icon-comment-alt"></i></span>
 										<span class="message">New comment</span>
-										<span class="time">yesterday</span> 
-                                    </a>
-                                </li>
+										<span class="time">yesterday</span>
+									</a>
+								</li>
 								<li>
-                                    <a href="#">
+									<a href="#">
 										<span class="icon blue"><i class="icon-user"></i></span>
 										<span class="message">New user registration</span>
-										<span class="time">yesterday</span> 
-                                    </a>
-                                </li>
-                                <li class="dropdown-menu-sub-footer">
-                            		<a>View all notifications</a>
-								</li>	
+										<span class="time">yesterday</span>
+									</a>
+								</li>
+								<li class="dropdown-menu-sub-footer">
+									<a>View all notifications</a>
+								</li>
 							</ul>
 						</li>
 						<!-- start: Notifications Dropdown -->
@@ -131,57 +133,57 @@
 							</a>
 							<ul class="dropdown-menu tasks">
 								<li class="dropdown-menu-title">
- 									<span>You have 17 tasks in progress</span>
+									<span>You have 17 tasks in progress</span>
 									<a href="#refresh"><i class="icon-repeat"></i></a>
 								</li>
 								<li>
-                                    <a href="#">
+									<a href="#">
 										<span class="header">
 											<span class="title">iOS Development</span>
 											<span class="percent"></span>
 										</span>
-                                        <div class="taskProgress progressSlim red">80</div> 
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
+										<div class="taskProgress progressSlim red">80</div>
+									</a>
+								</li>
+								<li>
+									<a href="#">
 										<span class="header">
 											<span class="title">Android Development</span>
 											<span class="percent"></span>
 										</span>
-                                        <div class="taskProgress progressSlim green">47</div> 
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-										<span class="header">
-											<span class="title">ARM Development</span>
-											<span class="percent"></span>
-										</span>
-                                        <div class="taskProgress progressSlim yellow">32</div> 
-                                    </a>
-                                </li>
+										<div class="taskProgress progressSlim green">47</div>
+									</a>
+								</li>
 								<li>
-                                    <a href="#">
+									<a href="#">
 										<span class="header">
 											<span class="title">ARM Development</span>
 											<span class="percent"></span>
 										</span>
-                                        <div class="taskProgress progressSlim greenLight">63</div> 
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-										<span class="header">
-											<span class="title">ARM Development</span>
-											<span class="percent"></span>
-										</span>
-                                        <div class="taskProgress progressSlim orange">80</div> 
-                                    </a>
-                                </li>
+										<div class="taskProgress progressSlim yellow">32</div>
+									</a>
+								</li>
 								<li>
-                            		<a class="dropdown-menu-sub-footer">View all tasks</a>
-								</li>	
+									<a href="#">
+										<span class="header">
+											<span class="title">ARM Development</span>
+											<span class="percent"></span>
+										</span>
+										<div class="taskProgress progressSlim greenLight">63</div>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<span class="header">
+											<span class="title">ARM Development</span>
+											<span class="percent"></span>
+										</span>
+										<div class="taskProgress progressSlim orange">80</div>
+									</a>
+								</li>
+								<li>
+									<a class="dropdown-menu-sub-footer">View all tasks</a>
+								</li>
 							</ul>
 						</li>
 						<!-- end: Notifications Dropdown -->
@@ -192,92 +194,92 @@
 							</a>
 							<ul class="dropdown-menu messages">
 								<li class="dropdown-menu-title">
- 									<span>You have 9 messages</span>
+									<span>You have 9 messages</span>
 									<a href="#refresh"><i class="icon-repeat"></i></a>
-								</li>	
-                            	<li>
-                                    <a href="#">
-										<span class="avatar"><img src="<?php echo base_url(); ?>/assets/admin/img/avatar.jpg" alt="Avatar"></span>
-										<span class="header">
-											<span class="from">
-										    	Dennis Ji
-										     </span>
-											<span class="time">
-										    	6 min
-										    </span>
-										</span>
-                                        <span class="message">
-                                            Lorem ipsum dolor sit amet consectetur adipiscing elit, et al commore
-                                        </span>  
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-										<span class="avatar"><img src="<?php echo base_url(); ?>/assets/admin/img/avatar.jpg" alt="Avatar"></span>
-										<span class="header">
-											<span class="from">
-										    	Dennis Ji
-										     </span>
-											<span class="time">
-										    	56 min
-										    </span>
-										</span>
-                                        <span class="message">
-                                            Lorem ipsum dolor sit amet consectetur adipiscing elit, et al commore
-                                        </span>  
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-										<span class="avatar"><img src="<?php echo base_url(); ?>/assets/admin/img/avatar.jpg" alt="Avatar"></span>
-										<span class="header">
-											<span class="from">
-										    	Dennis Ji
-										     </span>
-											<span class="time">
-										    	3 hours
-										    </span>
-										</span>
-                                        <span class="message">
-                                            Lorem ipsum dolor sit amet consectetur adipiscing elit, et al commore
-                                        </span>  
-                                    </a>
-                                </li>
+								</li>
 								<li>
-                                    <a href="#">
+									<a href="#">
 										<span class="avatar"><img src="<?php echo base_url(); ?>/assets/admin/img/avatar.jpg" alt="Avatar"></span>
 										<span class="header">
 											<span class="from">
-										    	Dennis Ji
-										     </span>
+												Dennis Ji
+											</span>
 											<span class="time">
-										    	yesterday
-										    </span>
+												6 min
+											</span>
 										</span>
-                                        <span class="message">
-                                            Lorem ipsum dolor sit amet consectetur adipiscing elit, et al commore
-                                        </span>  
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-										<span class="avatar"><img src="<?php echo base_url(); ?>/assets/admin/img/avatar.jpg" alt="Avatar"></span>
-										<span class="header">
-											<span class="from">
-										    	Dennis Ji
-										     </span>
-											<span class="time">
-										    	Jul 25, 2012
-										    </span>
+										<span class="message">
+											Lorem ipsum dolor sit amet consectetur adipiscing elit, et al commore
 										</span>
-                                        <span class="message">
-                                            Lorem ipsum dolor sit amet consectetur adipiscing elit, et al commore
-                                        </span>  
-                                    </a>
-                                </li>
+									</a>
+								</li>
 								<li>
-                            		<a class="dropdown-menu-sub-footer">View all messages</a>
-								</li>	
+									<a href="#">
+										<span class="avatar"><img src="<?php echo base_url(); ?>/assets/admin/img/avatar.jpg" alt="Avatar"></span>
+										<span class="header">
+											<span class="from">
+												Dennis Ji
+											</span>
+											<span class="time">
+												56 min
+											</span>
+										</span>
+										<span class="message">
+											Lorem ipsum dolor sit amet consectetur adipiscing elit, et al commore
+										</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<span class="avatar"><img src="<?php echo base_url(); ?>/assets/admin/img/avatar.jpg" alt="Avatar"></span>
+										<span class="header">
+											<span class="from">
+												Dennis Ji
+											</span>
+											<span class="time">
+												3 hours
+											</span>
+										</span>
+										<span class="message">
+											Lorem ipsum dolor sit amet consectetur adipiscing elit, et al commore
+										</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<span class="avatar"><img src="<?php echo base_url(); ?>/assets/admin/img/avatar.jpg" alt="Avatar"></span>
+										<span class="header">
+											<span class="from">
+												Dennis Ji
+											</span>
+											<span class="time">
+												yesterday
+											</span>
+										</span>
+										<span class="message">
+											Lorem ipsum dolor sit amet consectetur adipiscing elit, et al commore
+										</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<span class="avatar"><img src="<?php echo base_url(); ?>/assets/admin/img/avatar.jpg" alt="Avatar"></span>
+										<span class="header">
+											<span class="from">
+												Dennis Ji
+											</span>
+											<span class="time">
+												Jul 25, 2012
+											</span>
+										</span>
+										<span class="message">
+											Lorem ipsum dolor sit amet consectetur adipiscing elit, et al commore
+										</span>
+									</a>
+								</li>
+								<li>
+									<a class="dropdown-menu-sub-footer">View all messages</a>
+								</li>
 							</ul>
 						</li>
 						<!-- end: Message Dropdown -->
@@ -289,12 +291,12 @@
 						<!-- start: User Dropdown -->
 						<li class="dropdown">
 							<a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
-								<i class="halflings-icon white user"></i> Dennis Ji
+								<i class="halflings-icon white user"></i> <?php echo $this->session->userdata('name')?>
 								<span class="caret"></span>
 							</a>
 							<ul class="dropdown-menu">
 								<li class="dropdown-menu-title">
- 									<span>Account Settings</span>
+									<span>Account Settings</span>
 								</li>
 								<li><a href="#"><i class="halflings-icon user"></i> Profile</a></li>
 								<li><a href="login.html"><i class="halflings-icon off"></i> Logout</a></li>
@@ -304,20 +306,20 @@
 					</ul>
 				</div>
 				<!-- end: Header Menu -->
-				
+
 			</div>
 		</div>
 	</div>
 	<!-- start: Header -->
-	
-		<div class="container-fluid-full">
+
+	<div class="container-fluid-full">
 		<div class="row-fluid">
-				
+
 			<!-- start: Main Menu -->
 			<div id="sidebar-left" class="span2">
 				<div class="nav-collapse sidebar-nav">
 					<ul class="nav nav-tabs nav-stacked main-menu">
-						<li><a href="index.html"><i class="icon-bar-chart"></i><span class="hidden-tablet"> Dashboard</span></a></li>	
+						<li><a href="index.html"><i class="icon-bar-chart"></i><span class="hidden-tablet"> Dashboard</span></a></li>
 						<li><a href="messages.html"><i class="icon-envelope"></i><span class="hidden-tablet"> Messages</span></a></li>
 						<li><a href="tasks.html"><i class="icon-tasks"></i><span class="hidden-tablet"> Tasks</span></a></li>
 						<li><a href="ui.html"><i class="icon-eye-open"></i><span class="hidden-tablet"> UI Features</span></a></li>
@@ -328,7 +330,7 @@
 								<li><a class="submenu" href="submenu.html"><i class="icon-file-alt"></i><span class="hidden-tablet"> Sub Menu 1</span></a></li>
 								<li><a class="submenu" href="submenu2.html"><i class="icon-file-alt"></i><span class="hidden-tablet"> Sub Menu 2</span></a></li>
 								<li><a class="submenu" href="submenu3.html"><i class="icon-file-alt"></i><span class="hidden-tablet"> Sub Menu 3</span></a></li>
-							</ul>	
+							</ul>
 						</li>
 						<li><a href="form.html"><i class="icon-edit"></i><span class="hidden-tablet"> Forms</span></a></li>
 						<li><a href="chart.html"><i class="icon-list-alt"></i><span class="hidden-tablet"> Charts</span></a></li>
@@ -343,30 +345,31 @@
 				</div>
 			</div>
 			<!-- end: Main Menu -->
-			
+
 			<noscript>
 				<div class="alert alert-block span10">
 					<h4 class="alert-heading">Warning!</h4>
 					<p>You need to have <a href="http://en.wikipedia.org/wiki/JavaScript" target="_blank">JavaScript</a> enabled to use this site.</p>
 				</div>
 			</noscript>
-			
+
 			<!-- start: Content -->
 			<div id="content" class="span10">
-			
-			
-<?php echo $dashboard_content; ?>
-			
-       
 
-	</div><!--/.fluid-container-->
 
-		<!-- end: Content -->
+				<?php echo $dashboard_content; ?>
+
+
+
+			</div>
+			<!--/.fluid-container-->
+
+			<!-- end: Content -->
 		</div>
 		<!--/#content.span10-->
-		</div>
-		<!--/fluid-row-->
-		
+	</div>
+	<!--/fluid-row-->
+
 	<div class="modal hide fade" id="myModal">
 		<div class="modal-header">
 			<button type="button" class="close" data-dismiss="modal">×</button>
@@ -380,18 +383,18 @@
 			<a href="#" class="btn btn-primary">Save changes</a>
 		</div>
 	</div>
-	
+
 	<div class="clearfix"></div>
-	
+
 	<footer>
 
 		<p>
 			<span style="text-align:left;float:left">&copy; 2013 <a href="http://jiji262.github.io/Bootstrap_Metro_Dashboard/" alt="Bootstrap_Metro_Dashboard">Bootstrap Metro Dashboard</a></span>
-			
+
 		</p>
 
 	</footer>
-	
+
 	<!-- start: JavaScript-->
 	<script src="<?php echo base_url(); ?>/assets/admin/js/jquery-1.9.1.min.js"></script>
 	<script src="<?php echo base_url(); ?>/assets/admin/js/jquery-migrate-1.0.0.min.js"></script>
@@ -424,6 +427,8 @@
 	<script src="<?php echo base_url(); ?>/assets/admin/js/retina.js"></script>
 	<script src="<?php echo base_url(); ?>/assets/admin/js/custom.js"></script>
 	<!-- end: JavaScript-->
-	
+
+
 </body>
+
 </html>

@@ -26,7 +26,7 @@
 	<link rel="shortcut icon" href="<?php echo base_url(); ?>/assets/admin/img/favicon.ico">
 	<!-- end: Favicon -->
 	<style type="text/css">
-		body {
+		body{
 			background: url(<?php echo base_url(); ?>/assets/admin/img/bg-login.jpg) !important;
 		}
 	</style>
@@ -56,7 +56,15 @@
 								<input class="input-large span10" name="password" id="password" type="password" placeholder="type password" />
 							</div>
 							<div class="clearfix"></div>
-
+							<h2 style="color:red; text-align:center">
+								<?php 
+									$exception = $this->session->userdata('exception');
+									if($exception){
+										echo $exception;
+										$this->session->unset_userdata('exception');
+									}
+								?>
+							</h2>	
 							<label class="remember" for="remember"><input type="checkbox" id="remember" />Remember me</label>
 
 							<div class="button-login">
