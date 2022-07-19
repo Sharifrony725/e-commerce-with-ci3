@@ -119,67 +119,20 @@
 					<li><a href="checkout.html">Checkout</a></li>
 					<li><a href="contact.html">Contact Us</a></li>
 				</ul>
-				<div id="welcome"> Welcome visitor you can <a href="#">login</a> or <a href="#">create an account</a>. </div>
+				<div id="welcome"> Welcome visitor you can <a href="<?php echo base_url()?>AuthController">login</a> or <a href="#">create an account</a>. </div>
 				<div class="menu">
+					<?php
+						$this->db->select('*');
+						$this->db->from('tbl_category');
+						$this->db->where('publication_status' , 1);
+						$query_result = $this->db->get();
+						$all_published_category = $query_result->result();
+					?>
 					<ul id="topnav">
-						<li><a href="category.html">Pizza</a>
-							<ul class="children">
-								<li><a href="category.html">Pizza</a></li>
-								<li><a href="category.html">Lasagna</a>
-									<ul class="children2">
-										<li><a href="category.html">Pizza</a></li>
-										<li><a href="category.html">Lasagna</a></li>
-										<li><a href="category.html">Spaghetti</a></li>
-										<li><a href="category.html">Penne</a></li>
-										<li><a href="category.html">Canelonni</a></li>
-									</ul>
-								</li>
-								<li><a href="category.html">Spaghetti</a></li>
-								<li><a href="category.html">Penne</a></li>
-								<li><a href="category.html">Canelonni</a></li>
-							</ul>
-						</li>
-						<li><a href="category.html">Lasagna</a>
-							<ul class="children">
-								<li><a href="category.html">Pizza</a></li>
-								<li><a href="category.html">Lasagna</a>
-									<ul class="children2">
-										<li><a href="category.html">Pizza</a></li>
-										<li><a href="category.html">Lasagna</a></li>
-										<li><a href="category.html">Spaghetti</a></li>
-										<li><a href="category.html">Penne</a></li>
-										<li><a href="category.html">Canelonni</a></li>
-									</ul>
-								</li>
-								<li><a href="category.html">Spaghetti</a></li>
-								<li><a href="category.html">Penne</a></li>
-								<li><a href="category.html">Canelonni</a></li>
-							</ul>
-						</li>
-						<li><a href="category.html">Spaghetti</a></li>
-						<li><a href="category.html">Penne</a>
-							<ul class="children">
-								<li><a href="category.html">Pizza</a></li>
-								<li><a href="category.html">Lasagna</a>
-									<ul class="children2">
-										<li><a href="category.html">Pizza</a></li>
-										<li><a href="category.html">Lasagna</a></li>
-										<li><a href="category.html">Spaghetti</a></li>
-										<li><a href="category.html">Penne</a></li>
-										<li><a href="category.html">Canelonni</a></li>
-									</ul>
-								</li>
-								<li><a href="category.html">Spaghetti</a></li>
-								<li><a href="category.html">Penne</a></li>
-								<li><a href="category.html">Canelonni</a></li>
-							</ul>
-						</li>
-						<li><a href="category.html">Canelonni</a></li>
-						<li><a href="category.html">Fettuchini</a></li>
-						<li><a href="category.html">Risotto</a></li>
-						<li><a href="category.html">Antipasti</a></li>
-						<li><a href="category.html">Bar-B-Q</a></li>
-						<li><a href="category.html">Desserts</a></li>
+						<?php
+						foreach ($all_published_category as  $value_category) { ?>
+							<li><a href="category.html"><?php echo $value_category->category_name;  ?></a></li>
+						<?php } ?>
 					</ul>
 				</div>
 			</div>

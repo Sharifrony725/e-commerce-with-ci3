@@ -2,6 +2,16 @@
 defined('BASEPATH') or exit('No direct script access allowed');
 class AuthController extends CI_Controller
 {
+
+	public function __construct()
+	{
+		parent::__construct();
+		$id = $this->session->userdata('id');
+		if($id) {
+			redirect('SuperAdmin');
+		}
+	}
+
 	public function index()
 	{
 		$this->load->view('admin/admin_login');

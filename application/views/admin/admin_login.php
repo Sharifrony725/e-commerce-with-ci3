@@ -26,7 +26,7 @@
 	<link rel="shortcut icon" href="<?php echo base_url(); ?>/assets/admin/img/favicon.ico">
 	<!-- end: Favicon -->
 	<style type="text/css">
-		body{
+		body {
 			background: url(<?php echo base_url(); ?>/assets/admin/img/bg-login.jpg) !important;
 		}
 	</style>
@@ -42,6 +42,15 @@
 						<a href="index.html"><i class="halflings-icon home"></i></a>
 						<a href="#"><i class="halflings-icon cog"></i></a>
 					</div>
+					<h2 style="color:green; text-align:center">
+						<?php
+						$message = $this->session->userdata('message');
+						if ($message) {
+							echo $message;
+							$this->session->unset_userdata('message');
+						}
+						?>
+					</h2>
 					<h2>Login to your account</h2>
 					<form class="form-horizontal" action="<?php echo base_url() ?>AuthController/admin_login_check" method="post">
 						<fieldset>
@@ -57,14 +66,14 @@
 							</div>
 							<div class="clearfix"></div>
 							<h2 style="color:red; text-align:center">
-								<?php 
-									$exception = $this->session->userdata('exception');
-									if($exception){
-										echo $exception;
-										$this->session->unset_userdata('exception');
-									}
+								<?php
+								$exception = $this->session->userdata('exception');
+								if ($exception) {
+									echo $exception;
+									$this->session->unset_userdata('exception');
+								}
 								?>
-							</h2>	
+							</h2>
 							<label class="remember" for="remember"><input type="checkbox" id="remember" />Remember me</label>
 
 							<div class="button-login">
