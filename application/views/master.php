@@ -131,7 +131,7 @@
 					<ul id="topnav">
 						<?php
 						foreach ($all_published_category as  $value_category) { ?>
-							<li><a href="category.html"><?php echo $value_category->category_name;  ?></a></li>
+							<li><a href="#"><?php echo $value_category->category_name;?></a></li>
 						<?php } ?>
 					</ul>
 				</div>

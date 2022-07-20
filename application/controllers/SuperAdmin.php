@@ -22,7 +22,8 @@ class SuperAdmin extends CI_Controller
 		$data['dashboard_content'] = $this->load->view('admin/pages/add_category', '', true);
 		$this->load->view('admin/admin_master', $data);
 	}
-	public function save_category(){
+	public function save_category()
+	{
 		$data = array();
 		$data['category_name'] = $this->input->post('category_name');
 		$data['description'] = $this->input->post('description');
@@ -33,6 +34,34 @@ class SuperAdmin extends CI_Controller
 		$this->session->set_userdata($sData);
 		redirect('SuperAdmin/add_category');
 	}
+	public function manage_category()
+	{
+		$data = array();
+		$data['all_category'] = $this->SuperAdminModel->select_all_category();
+		$data['dashboard_content'] = $this->load->view('admin/pages/manage_category', $data, true);
+		$this->load->view('admin/admin_master', $data);
+	}
+
+	public function unpublished_category($id)
+	{
+		$this->SuperAdminModel->unpublished_category_by_id($id);
+		redirect('SuperAdmin/manage_category');
+	}
+
+	public function published_category($id)
+	{
+		$this->SuperAdminModel->published_category_by_id($id);
+		redirect('SuperAdmin/manage_category');
+	}
+	public function delete_category($id)
+	{
+		$this->SuperAdminModel->delete_category_by_id($id);
+		redirect('SuperAdmin/manage_category');
+	}
+
+
+
+
 
 	public function logout()
 	{
