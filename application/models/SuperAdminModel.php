@@ -79,4 +79,58 @@ class SuperAdminModel extends CI_Model
 		$this->db->where('id' , $id);
 		$this->db->update('tbl_manufacture' , $data);
 	}
+	//manufacturer method end
+
+	//product method start
+	public function select_all_published_category(){
+		$this->db->select('*');
+		$this->db->from('tbl_category');
+		$this->db->where('publication_status' , 1);
+		$query_result = $this->db->get();
+		$result = $query_result->result();
+		return $result;
+	}
+	public function select_all_published_manufacturer(){
+		$this->db->select('*');
+		$this->db->from('tbl_manufacture');
+		$this->db->where('publication_status' , 1);
+		$query_result = $this->db->get();
+		$result = $query_result->result();
+		return $result;
+	}
+	public function save_product_info($data){
+		$this->db->insert('tbl_product' , $data);
+	}
+	public function select_all_product(){
+		$this->db->select('*');
+		$this->db->from('tbl_product');
+		$query_result = $this->db->get();
+		$result = $query_result->result();
+		return $result;
+	}
+	public function unpublished_product_by_id($id){
+		$this->db->set('publication_status', 0);
+		$this->db->where('id', $id);
+		$this->db->update('tbl_product');
+	}
+	public function published_product_by_id($id){
+		$this->db->set('publication_status', 1);
+		$this->db->where('id', $id);
+		$this->db->update('tbl_product');
+	}
+	public function unpublished_featured_product_by_id($id){
+		$this->db->set('is_featured', 0);
+		$this->db->where('id', $id);
+		$this->db->update('tbl_product');
+	}
+	public function published_featured_product_by_id($id){
+		$this->db->set('is_featured', 1);
+		$this->db->where('id', $id);
+		$this->db->update('tbl_product');
+	}
+	public function delete_product_by_id($id){
+		$this->db->where('id' , $id);
+		$this->db->delete('tbl_product');
+	}
+	//product method end
 }

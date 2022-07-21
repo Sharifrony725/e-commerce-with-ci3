@@ -16,7 +16,7 @@
 	<div class="box-content">
 		<div class="box-product fixed">
 			<?php
-			foreach ($published_product as $v_product) { ?>
+			foreach ($published_product_by_category as $v_product) { ?>
 				<div class="prod_hold"> <a class="wrap_link" href="product.html"> <span class="image"><img src="<?php echo base_url() . $v_product->image; ?>" width="180" height="180" alt="Spicylicious store" /></span> </a>
 					<div class="pricetag_small"> <span class="old_price">BDT <?php echo $v_product->price ?></span> <span class="new_price">BDT <?php echo $v_product->new_price ?></span> </div>
 					<div class="info">

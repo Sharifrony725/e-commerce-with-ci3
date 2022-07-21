@@ -119,19 +119,19 @@
 					<li><a href="checkout.html">Checkout</a></li>
 					<li><a href="contact.html">Contact Us</a></li>
 				</ul>
-				<div id="welcome"> Welcome visitor you can <a href="<?php echo base_url()?>AuthController">login</a> or <a href="#">create an account</a>. </div>
+				<div id="welcome"> Welcome visitor you can <a href="<?php echo base_url() ?>AuthController">login</a> or <a href="#">create an account</a>. </div>
 				<div class="menu">
 					<?php
-						$this->db->select('*');
-						$this->db->from('tbl_category');
-						$this->db->where('publication_status' , 1);
-						$query_result = $this->db->get();
-						$all_published_category = $query_result->result();
+					$this->db->select('*');
+					$this->db->from('tbl_category');
+					$this->db->where('publication_status', 1);
+					$query_result = $this->db->get();
+					$all_published_category = $query_result->result();
 					?>
 					<ul id="topnav">
 						<?php
 						foreach ($all_published_category as  $value_category) { ?>
-							<li><a href="#"><?php echo $value_category->category_name;?></a></li>
+							<li><a href="<?php echo base_url() ?>Welcome/category_product/<?php echo $value_category->id; ?>"><?php echo $value_category->category_name; ?></a></li>
 						<?php } ?>
 					</ul>
 				</div>
@@ -147,59 +147,20 @@
 						<h2 class="heading-title"><span>Featured Products</span></h2>
 						<div class="box-content">
 							<ul id="myRoundabout">
-								<li>
-									<div class="prod_holder"> <a href="product.html"> <img src="<?php echo base_url(); ?>assets/image/pizza.jpg" alt="Spicylicious store" /> </a>
-										<h3>Pizza Peperoni</h3>
-									</div>
-									<span class="pricetag">$ 1400,99</span>
-								</li>
-								<li>
-									<div class="prod_holder"> <a href="product.html"> <img src="<?php echo base_url(); ?>assets/image/pizza2.jpg" alt="Spicylicious store" /> </a>
-										<h3>Pizza Caprichosa</h3>
-									</div>
-									<span class="pricetag">$ 99,99</span>
-								</li>
-								<li>
-									<div class="prod_holder"> <a href="product.html"> <img src="<?php echo base_url(); ?>assets/image/pizza3.jpg" alt="Spicylicious store" /> </a>
-										<h3>Something delicious</h3>
-									</div>
-									<span class="pricetag">$ 140,99</span>
-								</li>
-								<li>
-									<div class="prod_holder"> <a href="product.html"> <img src="<?php echo base_url(); ?>assets/image/pizza4.jpg" alt="Spicylicious store" /> </a>
-										<h3>Potato Noisettes</h3>
-									</div>
-									<span class="pricetag">$ 27,99</span>
-								</li>
-								<li>
-									<div class="prod_holder"> <a href="product.html"> <img src="<?php echo base_url(); ?>assets/image/pizza5.jpg" alt="Spicylicious store" /> </a>
-										<h3>Veal steak (medium rare)</h3>
-									</div>
-									<span class="pricetag">$ 14000,99</span>
-								</li>
-								<li>
-									<div class="prod_holder"> <a href="product.html"> <img src="<?php echo base_url(); ?>assets/image/pizza.jpg" alt="Spicylicious store" /> </a>
-										<h3>Peperoni pizza</h3>
-									</div>
-									<span class="pricetag">$ 73,99</span>
-								</li>
-								<li>
-									<div class="prod_holder"> <a href="product.html"> <img src="<?php echo base_url(); ?>assets/image/pizza2.jpg" alt="Spicylicious store" /> </a>
-										<h3>Peperoni pizza</h3>
-									</div>
-									<span class="pricetag">$ 1999,99</span>
-								</li>
-								<li>
-									<div class="prod_holder"> <a href="product.html"> <img src="<?php echo base_url(); ?>assets/image/pizza3.jpg" alt="Spicylicious store" /> </a>
-										<h3>Peperoni pizza</h3>
-									</div>
-									<span class="pricetag">$ 14,99</span>
-								</li>
+								<?php
+								foreach ($featured_product as $v_featured_product) { ?>
+									<li>
+										<div class="prod_holder"> <a href="product.html"> <img src="<?php echo base_url() . $v_featured_product->image; ?>" height="300" width="450" alt="Spicylicious store" /> </a>
+											<h3><?php echo $v_featured_product->product_name; ?></h3>
+										</div>
+										<span class="pricetag"><?php echo $v_featured_product->new_price ?>Tk</span>
+									</li>
+								<?php } ?>
 							</ul>
 							<a href="#" class="previous_round">Previous</a> <a href="#" class="next_round">Next</a>
 						</div>
 					</div>
-					
+
 					<?php echo $maincontent; ?>
 
 				</div>
@@ -281,7 +242,6 @@
 	<script type="text/javascript" src="http://twitter.com/javascripts/blogger.js"></script>
 	<script type="text/javascript" src="http://twitter.com/statuses/user_timeline/d_koev.json?callback=twitterCallback2&amp;count=3"></script>
 	<script type="text/javascript">
-	
 		// $(document).ready(function() {
 		// 	$('#twitter_update_list').cycle({
 		// 		fx: 'fade', // choose your transition type, ex: fade, scrollUp, shuffle, etc...
@@ -289,7 +249,6 @@
 		// 		prev: '#tweet_prev'
 		// 	});
 		// });
-		
 	</script>
 	<script type="text/javascript">
 		$(document).ready(function() {

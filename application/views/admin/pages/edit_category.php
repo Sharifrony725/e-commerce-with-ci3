@@ -6,7 +6,7 @@
 	</li>
 	<li>
 		<i class="icon-edit"></i>
-		<a href="#">Forms</a>
+		<a href="#">Category</a>
 	</li>
 </ul>
 

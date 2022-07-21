@@ -27,9 +27,9 @@ class SuperAdmin extends CI_Controller
 	public function save_category()
 	{
 		$data = array();
-		$data['category_name'] = $this->input->post('category_name');
-		$data['description'] = $this->input->post('description');
-		$data['publication_status'] = $this->input->post('publication_status');
+		$data['category_name'] = $this->input->post('category_name', true);
+		$data['description'] = $this->input->post('description', true);
+		$data['publication_status'] = $this->input->post('publication_status', true);
 		$this->SuperAdminModel->save_category_info($data);
 		$sData = array();
 		$sData['message'] = 'category save successfully.';
@@ -97,9 +97,9 @@ class SuperAdmin extends CI_Controller
 	}
 	public function save_manufacture(){
 		$data = array();
-		$data['manufacture_name'] = $this->input->post('manufacture_name');
-		$data['description'] = $this->input->post('description');
-		$data['publication_status'] = $this->input->post('publication_status');
+		$data['manufacture_name'] = $this->input->post('manufacture_name', true);
+		$data['description'] = $this->input->post('description', true);
+		$data['publication_status'] = $this->input->post('publication_status', true);
 		$this->SuperAdminModel->save_manufacture_info($data);
 		$sData = array();
 		$sData['message'] = 'manufacture save successfully.';
@@ -137,6 +137,86 @@ class SuperAdmin extends CI_Controller
 
 	}
 	//manufacture operation end
+
+	// product operation start
+	public function add_product(){
+		$data = array();
+		$data['published_category'] = $this->SuperAdminModel->select_all_published_category();
+		$data['published_manufacturer'] = $this->SuperAdminModel->select_all_published_manufacturer();
+		$data['dashboard_content'] = $this->load->view('admin/pages/add_product', $data, true);
+		$this->load->view('admin/admin_master', $data);
+	}
+	public function save_product(){
+		$data = array();
+		$fData = array();
+		$error = '';
+		$data['product_name'] = $this->input->post('product_name' ,true);
+		$data['category_name'] = $this->input->post('category_name', true);
+		$data['manufacturer_name'] = $this->input->post('manufacturer_name', true);
+		$data['short_description'] = $this->input->post('short_description', true);
+		$data['long_description'] = $this->input->post('long_description', true);
+		$data['price'] = $this->input->post('price', true);
+		$data['new_price'] = $this->input->post('new_price', true);
+		$data['quantity'] = $this->input->post('quantity', true);
+		$is_featured = $this->input->post('is_featured', true);
+		if($is_featured == 'on'){
+			$data['is_featured'] = 1;
+		}else{
+			$data['is_featured'] = 0;
+		}
+		//start image upload
+		$config['upload_path'] = 'product_images/';
+		$config['allowed_types'] = 'jpg|png';
+		$config['max_size'] = 1000;
+		$config['max_width'] = 10240;
+		$config['max_height'] = 78006;
+		$this->load->library('upload' , $config);
+		if(!$this->upload->do_upload('image')){
+			$error = $this->upload->display_errors();
+			echo $error;
+		}else{
+			$fData = $this->upload->data();
+			$data['image'] = $config['upload_path'].$fData['file_name'];
+		}
+		//end image upload
+		$data['publication_status'] = $this->input->post('publication_status', true);
+		$this->SuperAdminModel->save_product_info($data);
+		$sData = array();
+		$sData['message'] = 'product info save successfully';
+		$this->session->set_userdata($sData);
+		redirect('SuperAdmin/add_product');
+	}
+	public function manage_product(){
+		$data = array();
+		$data['all_product'] = $this->SuperAdminModel->select_all_product();
+		$data['dashboard_content'] = $this->load->view('admin/pages/manage_product', $data, true);
+		$this->load->view('admin/admin_master', $data);
+
+	}
+	public function unpublished_product($id){
+		$this->SuperAdminModel->unpublished_product_by_id($id);
+		redirect('SuperAdmin/manage_product');
+	}
+	public function published_product($id){
+		$this->SuperAdminModel->published_product_by_id($id);
+		redirect('SuperAdmin/manage_product');
+	}
+	public function unpublished_featured_product($id){
+		$this->SuperAdminModel->unpublished_featured_product_by_id($id);
+		redirect('SuperAdmin/manage_product');
+	}
+	public function published_featured_product($id){
+		$this->SuperAdminModel->published_featured_product_by_id($id);
+		redirect('SuperAdmin/manage_product');
+	}
+	public function delete_product($id){
+		$this->SuperAdminModel->delete_product_by_id($id);
+		$sData = array();
+		$sData['message'] = 'product delete successfully.';
+		$this->session->set_userdata($sData);
+		redirect('SuperAdmin/manage_product');
+	}
+	// product operation end
 
 	//admin logout method
 	public function logout()
