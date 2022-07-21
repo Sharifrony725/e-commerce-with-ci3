@@ -322,8 +322,8 @@
 						<li><a href="index.html"><i class="icon-bar-chart"></i><span class="hidden-tablet"> Dashboard</span></a></li>
 						<li><a href="<?php echo base_url() ?>SuperAdmin/add_category"><i class="icon-envelope"></i><span class="hidden-tablet">Add Category</span></a></li>
 						<li><a href="<?php echo base_url() ?>SuperAdmin/manage_category"><i class="icon-tasks"></i><span class="hidden-tablet"> Manage Category</span></a></li>
-						<li><a href="ui.html"><i class="icon-eye-open"></i><span class="hidden-tablet"> UI Features</span></a></li>
-						<li><a href="widgets.html"><i class="icon-dashboard"></i><span class="hidden-tablet"> Widgets</span></a></li>
+						<li><a href="<?php echo base_url() ?>SuperAdmin/add_manufacture"><i class="icon-eye-open"></i><span class="hidden-tablet"> Add Manufacture</span></a></li>
+						<li><a href="<?php echo base_url() ?>SuperAdmin/manage_manufacture"><i class="icon-dashboard"></i><span class="hidden-tablet">Manage Manufacture</span></a></li>
 						<li>
 							<a class="dropmenu" href="#"><i class="icon-folder-close-alt"></i><span class="hidden-tablet"> Dropdown</span><span class="label label-important"> 3 </span></a>
 							<ul>

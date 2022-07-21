@@ -4,23 +4,22 @@
 		<a href="index.html">Home</a>
 		<i class="icon-angle-right"></i>
 	</li>
-	<li><a href="#">Category</a></li>
+	<li><a href="#">Manufacture</a></li>
 </ul>
 
 <div class="row-fluid sortable">
+	<h3 style="color:green; text-align:center">
+		<?php
+		$message = $this->session->userdata('message');
+		if ($message) {
+			echo $message;
+			$this->session->unset_userdata('message');
+		}
+		?>
+	</h3>
 	<div class="box span12">
-		<h3 style="color:green; text-align:center">
-			<?php
-			$message = $this->session->userdata('message');
-			if ($message) {
-				echo $message;
-				$this->session->unset_userdata('message');
-			}
-			?>
-		</h3>
 		<div class="box-header" data-original-title>
-			<h2><i class="halflings-icon user"></i><span class="break"></span>All Category</h2>
-
+			<h2><i class="halflings-icon user"></i><span class="break"></span>All Manufacture</h2>
 			<div class="box-icon">
 				<a href="#" class="btn-setting"><i class="halflings-icon wrench"></i></a>
 				<a href="#" class="btn-minimize"><i class="halflings-icon chevron-up"></i></a>
@@ -39,13 +38,13 @@
 				</thead>
 				<tbody>
 					<?php
-					foreach ($all_category as $single_category) { ?>
+					foreach ($all_manufacture as $single_manufacture) { ?>
 						<tr>
-							<td><?php echo $single_category->id; ?></td>
-							<td class="center"><?php echo $single_category->category_name; ?></td>
+							<td><?php echo $single_manufacture->id; ?></td>
+							<td class="center"><?php echo $single_manufacture->manufacture_name; ?></td>
 							<td class="center">
 								<?php
-								if ($single_category->publication_status == 1) { ?>
+								if ($single_manufacture->publication_status == 1) { ?>
 									<span class="label label-success">Active</span>
 								<?php } else { ?>
 									<span class="label label-important">Inactive</span>
@@ -53,21 +52,21 @@
 							</td>
 							<td class="center">
 								<?php
-								if ($single_category->publication_status == 1) { ?>
-									<a class="btn btn-danger" href="<?php echo base_url() ?>SuperAdmin/unpublished_category/<?php echo $single_category->id ?>">
+								if ($single_manufacture->publication_status == 1) { ?>
+									<a class="btn btn-danger" href="<?php echo base_url() ?>SuperAdmin/unpublished_manufacture/<?php echo $single_manufacture->id ?>">
 										<i class="halflings-icon white arrow-down"></i>
 									</a>
 								<?php } else { ?>
-									<a class="btn btn-success" href="<?php echo base_url() ?>SuperAdmin/published_category/<?php echo $single_category->id ?>">
+									<a class="btn btn-success" href="<?php echo base_url() ?>SuperAdmin/published_manufacture/<?php echo $single_manufacture->id ?>">
 										<i class="halflings-icon white arrow-up"></i>
 									</a>
 								<?php } ?>
 
 
-								<a class="btn btn-info" href="<?php echo base_url() ?>SuperAdmin/edit_category/<?php echo $single_category->id; ?>">
+								<a class="btn btn-info" href="<?php echo base_url() ?>SuperAdmin/edit_manufacture/<?php echo $single_manufacture->id; ?>">
 									<i class="halflings-icon white edit"></i>
 								</a>
-								<a class="btn btn-danger" href="<?php echo base_url() ?>SuperAdmin/delete_category/<?php echo $single_category->id; ?>">
+								<a class="btn btn-danger" href="<?php echo base_url() ?>SuperAdmin/delete_manufacture/<?php echo $single_manufacture->id; ?>">
 									<i class="halflings-icon white trash"></i>
 								</a>
 							</td>
