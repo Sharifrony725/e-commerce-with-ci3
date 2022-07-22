@@ -25,4 +25,12 @@ class Welcome extends CI_Controller {
 		$data['maincontent'] = $this->load->view('pages/about', '', true);
 		$this->load->view('master' , $data);
 	}
+	public function product_detail($id){
+		$data = array();
+		$data['product_info'] = $this->WelcomeModel->select_product_info_by_id($id);
+		$data['featured_product'] = $this->WelcomeModel->select_all_featured_product();
+		$data['maincontent'] = $this->load->view('pages/product_detail', $data, true);
+		$this->load->view('master' , $data);
+	}
+
 }

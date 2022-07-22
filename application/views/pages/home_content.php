@@ -17,12 +17,12 @@
 		<div class="box-product fixed">
 			<?php
 			foreach ($published_product as $v_product) { ?>
-				<div class="prod_hold"> <a class="wrap_link" href="product.html"> <span class="image"><img src="<?php echo base_url() . $v_product->image; ?>" width="180" height="180" alt="Spicylicious store" /></span> </a>
+				<div class="prod_hold"> <a class="wrap_link" href="<?php echo base_url() ?>Welcome/product_detail/<?php echo $v_product->id; ?>"> <span class="image"><img src="<?php echo base_url() . $v_product->image; ?>" width="180" height="180" alt="Spicylicious store" /></span> </a>
 					<div class="pricetag_small"> <span class="old_price">BDT <?php echo $v_product->price ?></span> <span class="new_price">BDT <?php echo $v_product->new_price ?></span> </div>
 					<div class="info">
 						<h3><?php echo $v_product->product_name; ?></h3>
 						<p><?php echo $v_product->short_description; ?></p>
-						<a class="add_to_cart_small" href="#">Add to cart</a> <a class="wishlist_small" href="#">Wishlist</a> <a class="compare_small" href="#">Compare</a>
+						<a class="add_to_cart_small" href="<?php echo base_url() ?>CartController/cart/<?php echo $v_product->id ?>">Add to cart</a> <a class="wishlist_small" href="#">Wishlist</a> <a class="compare_small" href="#">Compare</a>
 					</div>
 				</div>
 			<?php } ?>

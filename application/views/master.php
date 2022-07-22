@@ -115,7 +115,7 @@
 				<div id="logo"><a href="index.html"><img src="<?php echo base_url(); ?>assets/image/logo.png" width="217" height="141" alt="Spicylicious store" /></a></div>
 				<ul class="main_menu menu_right">
 					<li><a href="compare.html">Compare</a></li>
-					<li><a href="cart.html">Shopping Cart</a></li>
+					<li><a href="<?php echo base_url() ?>CartController/cart">Shopping Cart</a></li>
 					<li><a href="checkout.html">Checkout</a></li>
 					<li><a href="contact.html">Contact Us</a></li>
 				</ul>
@@ -150,7 +150,7 @@
 								<?php
 								foreach ($featured_product as $v_featured_product) { ?>
 									<li>
-										<div class="prod_holder"> <a href="product.html"> <img src="<?php echo base_url() . $v_featured_product->image; ?>" height="300" width="450" alt="Spicylicious store" /> </a>
+										<div class="prod_holder"> <a href="<?php echo base_url() ?>Welcome/product_detail/<?php echo $v_featured_product->id; ?>"> <img src="<?php echo base_url() . $v_featured_product->image; ?>" height="300" width="450" alt="Spicylicious store" /> </a>
 											<h3><?php echo $v_featured_product->product_name; ?></h3>
 										</div>
 										<span class="pricetag"><?php echo $v_featured_product->new_price ?>Tk</span>
