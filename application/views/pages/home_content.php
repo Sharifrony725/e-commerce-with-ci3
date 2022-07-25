@@ -22,7 +22,12 @@
 					<div class="info">
 						<h3><?php echo $v_product->product_name; ?></h3>
 						<p><?php echo $v_product->short_description; ?></p>
-						<a class="add_to_cart_small" href="<?php echo base_url() ?>CartController/cart/<?php echo $v_product->id ?>">Add to cart</a> <a class="wishlist_small" href="#">Wishlist</a> <a class="compare_small" href="#">Compare</a>
+						<form action="<?php echo base_url(); ?>CartController/add_to_cart" method="post">
+							<input type="hidden" value="1" size="2" name="qty" id="qty" />
+							<input type="hidden" name="product_id" value="<?php echo $v_product->id ?>">
+							<button type="submit" class="button" id="button-cart" title="Add to Cart"><span>Add to Cart</span></button><br><br>
+						</form>
+						<a class="wishlist_small" href="#">Wishlist</a> <a class="compare_small" href="#">Compare</a>
 					</div>
 				</div>
 			<?php } ?>

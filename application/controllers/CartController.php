@@ -31,5 +31,16 @@ class CartController extends CI_Controller {
 		$data['maincontent'] = $this->load->view('pages/show_cart', $data, true);
 		$this->load->view('master', $data);
 	}
+	public function cart_update(){
+		$data = array();
+		$qty = $this->input->post('qty');
+		$row_id = $this->input->post('row_id');
+		$data = array(
+			'rowid' => $row_id,
+			'qty'   => $qty
+		);
 
+		$this->cart->update($data);
+		redirect('CartController/show_cart');
+	}
 }

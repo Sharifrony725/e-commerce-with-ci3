@@ -115,7 +115,7 @@
 				<div id="logo"><a href="index.html"><img src="<?php echo base_url(); ?>assets/image/logo.png" width="217" height="141" alt="Spicylicious store" /></a></div>
 				<ul class="main_menu menu_right">
 					<li><a href="compare.html">Compare</a></li>
-					<li><a href="<?php echo base_url() ?>CartController/cart">Shopping Cart</a></li>
+					<li><a href="<?php echo base_url(); ?>/CartController/show_cart">Shopping Cart</a></li>
 					<li><a href="checkout.html">Checkout</a></li>
 					<li><a href="contact.html">Contact Us</a></li>
 				</ul>
@@ -188,16 +188,7 @@
 					<!-- END OF FOOTER MODULES AREA -->
 					<div class="footer_social">
 						<h3>Spread the word</h3>
-						<!-- AddThis Button BEGIN -->
-						<div class="addthis_toolbox addthis_default_style ">
-							<script type="text/javascript">
-								//<![CDATA[
-								document.write('<a class="addthis_button_google_plusone" g:plusone:size="medium"></a> <a class="addthis_button_tweet"></a> <a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>');
-								//]]>
-							</script>
-						</div>
-						<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=ra-4e7280075406aa87"></script>
-						<!-- AddThis Button END -->
+
 					</div>
 				</div>
 				<div class="column_small">

@@ -320,20 +320,35 @@
 				<div class="nav-collapse sidebar-nav">
 					<ul class="nav nav-tabs nav-stacked main-menu">
 						<li><a href="index.html"><i class="icon-bar-chart"></i><span class="hidden-tablet"> Dashboard</span></a></li>
-						<li><a href="<?php echo base_url() ?>SuperAdmin/add_category"><i class="icon-envelope"></i><span class="hidden-tablet">Add Category</span></a></li>
-						<li><a href="<?php echo base_url() ?>SuperAdmin/manage_category"><i class="icon-tasks"></i><span class="hidden-tablet"> Manage Category</span></a></li>
-						<li><a href="<?php echo base_url() ?>SuperAdmin/add_manufacture"><i class="icon-eye-open"></i><span class="hidden-tablet"> Add Manufacture</span></a></li>
-						<li><a href="<?php echo base_url() ?>SuperAdmin/manage_manufacture"><i class="icon-dashboard"></i><span class="hidden-tablet">Manage Manufacture</span></a></li>
-						<li><a href="<?php echo base_url() ?>SuperAdmin/add_product"><i class="icon-dashboard"></i><span class="hidden-tablet">Add Product</span></a></li>
-						<li><a href="<?php echo base_url() ?>SuperAdmin/manage_product"><i class="icon-dashboard"></i><span class="hidden-tablet">Manage Product</span></a></li>
+						<!-- <li><a href="<?php echo base_url() ?>SuperAdmin/add_category"><i class="icon-envelope"></i><span class="hidden-tablet">Add Category</span></a></li>
+						<li><a href="<?php echo base_url() ?>SuperAdmin/manage_category"><i class="icon-tasks"></i><span class="hidden-tablet"> Manage Category</span></a></li> -->
+						<!-- <li><a href="<?php echo base_url() ?>SuperAdmin/add_manufacture"><i class="icon-eye-open"></i><span class="hidden-tablet"> Add Manufacture</span></a></li>
+						<li><a href="<?php echo base_url() ?>SuperAdmin/manage_manufacture"><i class="icon-dashboard"></i><span class="hidden-tablet">Manage Manufacture</span></a></li> -->
+						<!-- <li><a href="<?php echo base_url() ?>SuperAdmin/add_product"><i class="icon-dashboard"></i><span class="hidden-tablet">Add Product</span></a></li>
+						<li><a href="<?php echo base_url() ?>SuperAdmin/manage_product"><i class="icon-dashboard"></i><span class="hidden-tablet">Manage Product</span></a></li> -->
+
 						<li>
-							<a class="dropmenu" href="#"><i class="icon-folder-close-alt"></i><span class="hidden-tablet"> Dropdown</span><span class="label label-important"> 3 </span></a>
+							<a class="dropmenu" href="#"><i class="icon-folder-close-alt"></i><span class="hidden-tablet">Categories</span></a>
 							<ul>
-								<li><a class="submenu" href="submenu.html"><i class="icon-file-alt"></i><span class="hidden-tablet"> Sub Menu 1</span></a></li>
-								<li><a class="submenu" href="submenu2.html"><i class="icon-file-alt"></i><span class="hidden-tablet"> Sub Menu 2</span></a></li>
-								<li><a class="submenu" href="submenu3.html"><i class="icon-file-alt"></i><span class="hidden-tablet"> Sub Menu 3</span></a></li>
+								<li><a href="<?php echo base_url() ?>SuperAdmin/add_category"><i class="icon-envelope"></i><span class="hidden-tablet">Add Category</span></a></li>
+								<li><a href="<?php echo base_url() ?>SuperAdmin/manage_category"><i class="icon-tasks"></i><span class="hidden-tablet"> Manage Category</span></a></li>
 							</ul>
 						</li>
+						<li>
+							<a class="dropmenu" href="#"><i class="icon-folder-close-alt"></i><span class="hidden-tablet">Manufacturer</span></a>
+							<ul>
+								<li><a href="<?php echo base_url() ?>SuperAdmin/add_manufacture"><i class="icon-eye-open"></i><span class="hidden-tablet"> Add Manufacture</span></a></li>
+								<li><a href="<?php echo base_url() ?>SuperAdmin/manage_manufacture"><i class="icon-dashboard"></i><span class="hidden-tablet">Manage Manufacture</span></a></li>
+							</ul>
+						</li>
+						<li>
+							<a class="dropmenu" href="#"><i class="icon-folder-close-alt"></i><span class="hidden-tablet">Products</span></a>
+							<ul>
+								<li><a href="<?php echo base_url() ?>SuperAdmin/add_product"><i class="icon-dashboard"></i><span class="hidden-tablet">Add Product</span></a></li>
+								<li><a href="<?php echo base_url() ?>SuperAdmin/manage_product"><i class="icon-dashboard"></i><span class="hidden-tablet">Manage Product</span></a></li>
+							</ul>
+						</li>
+
 						<li><a href="form.html"><i class="icon-edit"></i><span class="hidden-tablet"> Forms</span></a></li>
 						<li><a href="chart.html"><i class="icon-list-alt"></i><span class="hidden-tablet"> Charts</span></a></li>
 						<li><a href="typography.html"><i class="icon-font"></i><span class="hidden-tablet"> Typography</span></a></li>
