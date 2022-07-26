@@ -22,7 +22,9 @@
  						<?php
 							foreach ($contents as $items) { ?>
  							<tr>
- 								<td class="remove"><input type="checkbox" value="41" name="remove[]" />Remove</td>
+ 								<td class="remove">
+									<a href="<?php echo base_url();?>CartController/delete_cart/<?php echo $items['rowid'];?>" name="remove">Remove</a>
+								</td>
  								<td class="image"><a href="#"><img height="70" width="90" src="<?php echo base_url() . $items['options']['image']; ?>" alt="Spicylicious store" /></a></td>
  								<td class="name"><?php echo $items['name']; ?></td>
 
@@ -71,7 +73,7 @@
  			</div>
  			<div class="buttons">
  				<div class="left"><a class="button" onclick=""><span>Update</span></a></div>
- 				<div class="right"><a class="button" href="#"><span>Checkout</span></a></div>
+ 				<div class="right"><a class="button" href="<?php echo base_url();?>Checkout/customer_registration"><span>Checkout</span></a></div>
  				<div class="center"><a class="button" href="#"><span>Continue Shopping</span></a></div>
  			</div>
  		</div>

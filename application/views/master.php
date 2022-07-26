@@ -115,7 +115,7 @@
 				<div id="logo"><a href="index.html"><img src="<?php echo base_url(); ?>assets/image/logo.png" width="217" height="141" alt="Spicylicious store" /></a></div>
 				<ul class="main_menu menu_right">
 					<li><a href="compare.html">Compare</a></li>
-					<li><a href="<?php echo base_url(); ?>/CartController/show_cart">Shopping Cart</a></li>
+					<li><a href="<?php echo base_url(); ?>/CartController/show_cart">Shopping Cart(<?php echo $this->cart->total_items();?>)</a></li>
 					<li><a href="checkout.html">Checkout</a></li>
 					<li><a href="contact.html">Contact Us</a></li>
 				</ul>

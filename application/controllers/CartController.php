@@ -43,4 +43,14 @@ class CartController extends CI_Controller {
 		$this->cart->update($data);
 		redirect('CartController/show_cart');
 	}
+	public function delete_cart($row_id){
+		$data = array();
+		$data = array(
+			'rowid' => $row_id,
+			'qty'   => 0
+		);
+
+		$this->cart->update($data);
+		redirect('CartController/show_cart');
+	}
 }
