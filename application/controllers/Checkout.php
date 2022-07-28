@@ -8,5 +8,21 @@ class Checkout extends CI_Controller
 		$data['maincontent'] = $this->load->view('pages/checkout', $data, true);
 		$this->load->view('master', $data);
 	}
-}
-
+	public function customer_save(){
+		$data = array();
+		$data['first_name'] = $this->input->post('first_name');
+		$data['last_name'] = $this->input->post('last_name');
+		$data['email'] = $this->input->post('email');
+		$data['password'] = $this->input->post('password');
+		$data['company'] = $this->input->post('company');
+		$data['mobile'] = $this->input->post('mobile');
+		$data['address'] = $this->input->post('address');
+		$data['city'] = $this->input->post('city');
+		$data['postcode'] = $this->input->post('postcode');
+		$data['country'] = $this->input->post('country');
+		$customer_id = $this->CheckoutModel->save_customer_info($data);
+		$sData = array();
+		$sData['customer_id'] = $customer_id;
+		$this->session->set_userdata($sData);
+	}
+}	
