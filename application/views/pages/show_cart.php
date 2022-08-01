@@ -23,8 +23,8 @@
 							foreach ($contents as $items) { ?>
  							<tr>
  								<td class="remove">
-									<a href="<?php echo base_url();?>CartController/delete_cart/<?php echo $items['rowid'];?>" name="remove">Remove</a>
-								</td>
+ 									<a href="<?php echo base_url(); ?>CartController/delete_cart/<?php echo $items['rowid']; ?>" name="remove">Remove</a>
+ 								</td>
  								<td class="image"><a href="#"><img height="70" width="90" src="<?php echo base_url() . $items['options']['image']; ?>" alt="Spicylicious store" /></a></td>
  								<td class="name"><?php echo $items['name']; ?></td>
 
@@ -65,7 +65,11 @@
  							<td colspan="5"></td>
  							<td class="right numbers_total"><b>Grand Total:</b></td>
  							<td class="right numbers_total">Tk
- 								<?php echo $this->cart->total() + $vat; ?>
+ 								<?php 
+								$sData['grant_total'] = $this->cart->total() + $vat;
+								$this->session->set_userdata($sData);
+								echo $this->cart->total() + $vat;
+								 ?>
  							</td>
  						</tr>
  					</tbody>
@@ -73,8 +77,18 @@
  			</div>
  			<div class="buttons">
  				<div class="left"><a class="button" onclick=""><span>Update</span></a></div>
- 				<div class="right"><a class="button" href="<?php echo base_url();?>Checkout/customer_registration"><span>Checkout</span></a></div>
- 				<div class="center"><a class="button" href="#"><span>Continue Shopping</span></a></div>
+ 				<?php
+					$customer_id = $this->session->userdata('customer_id');
+					$shipping_id = $this->session->userdata('shipping_id');
+					if ($customer_id != NULL && $shipping_id == NULL) { ?>
+ 						<div class="right"><a class="button" href="<?php echo base_url(); ?>Checkout/shipping"><span>Checkout</span></a></div>
+ 					<?php } elseif ($customer_id != NULL && $shipping_id != NULL) { ?>
+ 						<div class="right"><a class="button" href="<?php echo base_url(); ?>Checkout/payment"><span>Checkout</span></a></div>
+ 					<?php } else { ?>
+ 						<div class="right"><a class="button" href="<?php echo base_url(); ?>Checkout/customer_registration"><span>Checkout</span></a></div>
+ 					<?php } ?>
+ 						<div class="center"><a class="button"><span>Continue Shopping</span></a></div>
+
  			</div>
  		</div>
  	</div>
